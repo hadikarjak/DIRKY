@@ -4732,6 +4732,218 @@ body {
 
 /* End About Page */
 
+/* ===== About Years Section ===== */
+.about-years-section {
+    width: 100%;
+    background: linear-gradient(135deg, #0a151a 0%, #0d1a1f 100%);
+    padding: 100px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle background decoration */
+.about-years-section::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(87, 140, 151, 0.03), transparent 70%);
+    border-radius: 50%;
+}
+
+.about-years-section::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(87, 140, 151, 0.03), transparent 70%);
+    border-radius: 50%;
+}
+
+.about-years-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.about-years-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Icon ===== */
+.years-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(87, 140, 151, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border: 2px solid rgba(87, 140, 151, 0.2);
+    transition: all 0.4s ease;
+      font-size: 2.5em;
+    color: var(--color-primary) ;
+}
+
+.years-icon i {
+    font-size: 2.5em;
+    color: var(--color-primary) ;
+}
+
+.about-years-content:hover .years-icon {
+    transform: scale(1.05);
+    border-color: rgba(87, 140, 151, 0.4);
+    box-shadow: 0 0 30px rgba(87, 140, 151, 0.1);
+}
+
+/* ===== Years Number ===== */
+.years-number {
+    font-size: 6em;
+    font-weight: 800;
+    color: var(--color-primary, #578C97);
+    line-height: 1;
+    margin-bottom: 15px;
+    opacity: 0.8;
+    letter-spacing: 2px;
+}
+
+/* ===== Title ===== */
+.years-title {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.years-title span {
+    color: var(--color-primary, #578C97);
+    position: relative;
+}
+
+.years-title span::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--color-primary, #578C97);
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+/* ===== Description ===== */
+.years-description {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+/* ===== Trust Indicators ===== */
+.years-trust {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 12px 24px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.3s ease;
+    color: var(--color-primary, #578C97);
+    font-size: 1.2em;
+}
+
+.trust-item:hover {
+    background: rgba(87, 140, 151, 0.08);
+    border-color: rgba(87, 140, 151, 0.2);
+    transform: translateY(-3px);
+}
+
+
+.trust-item span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .about-years-section {
+        padding: 70px 0;
+    }
+
+    .years-number {
+        font-size: 4.5em;
+    }
+
+    .years-title {
+        font-size: 2.2em;
+    }
+
+    .years-description {
+        font-size: 1em;
+        padding: 0 15px;
+    }
+
+    .years-trust {
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .trust-item {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+        padding: 14px 20px;
+    }
+
+    .years-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+    .years-icon i {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .years-number {
+        font-size: 3.5em;
+    }
+
+    .years-title {
+        font-size: 1.8em;
+    }
+
+    .years-description {
+        font-size: 0.95em;
+    }
+} 
 /* Start Services Page */
 /* ===== Services Hero Section ===== */
 .services-hero-section {
